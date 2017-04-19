@@ -1,0 +1,21 @@
+File Name: README
+Name :     Mohammad Mirabian
+Assignment:Homework 1
+CruzID:    mmirabia
+
+
+Files Submitted:
+myserver.c: server implementation
+myclient.c: client implementation
+myunp.c:    library file provided by the TA
+myunp.h:    header file provided by the TA
+README:     name of files provided and etc
+Document:   Description of my algorithm
+
+NOTE: all makefiles were provided by the TA, and they work perfectly fine.
+
+What works, and what doesn't:
+everything works the only problem is that as you will see, I print the results of
+the command in both ends, the way the results are shown in the client side, they're 
+not completely alligned like they are on the server side, I couldn't find out why.
+Everything else seems to work.

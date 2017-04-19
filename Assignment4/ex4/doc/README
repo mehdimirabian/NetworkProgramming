@@ -1,0 +1,36 @@
+To compile:
+
+Use make command in project folder,
+after that the executable myserver should be generated in the bin folder.
+
+To execute:
+
+change directory to bin folder. Then use this command
+
+./myserver
+
+Be default, the proxy server waits on port 28888. You can change this
+by specifying the port in the command line. For example,
+
+./myserver 31231
+
+Design
+
+The proxy server, when start up, create a TCP server on the required port,
+and accepts the client. When a new client is accepted, the server forks
+a new process to handle that client. The new process (in the handle function)
+first reads the request from the client, then parse the request method, uri,
+and protocol from the request. If it's an acceptable request, it then parses
+the host from the request and checks
+the filter list (loaded from forbidden-sites file when the proxy starts up)
+to check whether the host should be filtered or forwarded.
+If it should be forwarded, it creates a TCP connection with the HTTP server,
+and send the request to the HTTP server. After that, the proxy server reads
+the data from the HTTP server and sends it directly back to the client.
+
+To terminate the process gracefully, the proxy server registers SIGCHLD handler
+to wait on the finished child processes. In addition, the proxy server registers
+SIGINT handler, which closes the server socket and log file when Ctrl-C is entered
+to shutdown the proxy server.
+
+

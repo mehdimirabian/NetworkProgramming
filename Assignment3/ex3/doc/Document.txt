@@ -1,0 +1,7 @@
+File Name: Document
+Name :     Mohammad Mirabian
+Assignment:Homework 3
+CruzID:    mmirabia
+
+Using what I had done in the previous assignment I fixed the issues and modified TCP functionality to UDP. Running client, the client asks for user to type in the name
+of the file to be transfered and the file will be transfered as man chunks as indicated.

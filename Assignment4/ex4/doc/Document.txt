@@ -1,0 +1,17 @@
+File Name: Document
+Name :     Mohammad Mirabian
+Assignment:Homework 4
+CruzID:    mmirabia
+
+To run this program you need to run myserver file with the port number, then on your browser you need to
+set up the proxy server to the ip address and port number specified in your terminal. 
+if the website requested by the browser is not mentioned in forbidden file, the terminal will show you
+Date and time the request was received
+
+- Type of request and HTTP version
+- Requesting host name
+- URI and server address
+- Action taken by proxy (forwarded, filtered, etc.)
+- Type of errors detected, if any
+
+but if the website is forbidden you shouldn't be allowed to reach it.

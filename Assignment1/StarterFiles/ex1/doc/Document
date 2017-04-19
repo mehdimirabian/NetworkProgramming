@@ -1,0 +1,9 @@
+File Name: Document
+Name :     Mohammad Mirabian
+Assignment:Homework 1
+CruzID:    mmirabia
+
+I don't have anything special in my algorithm. I created the sockets on both ends, Write() from client
+to the server, server does a Read() to get what was typed by the client, executes command using popen()
+and does a Write() to client, and client does a Read() to get the results back and prints it to the
+stdout.
